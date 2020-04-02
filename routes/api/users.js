@@ -44,7 +44,7 @@ router.post(
 
       //get users gravator
 
-      const avator = gravatar.url(email, {
+      const avatar = gravatar.url(email, {
         s: '200',
         r: 'pg',
         d: 'mm'
@@ -53,7 +53,7 @@ router.post(
       user = new User({
         name,
         email,
-        avator,
+        avatar,
         password
       });
 
@@ -85,7 +85,7 @@ router.post(
       );
     } catch (err) {
       console.log(err.message);
-      res.status(500).send('Server Error');
+      res.status(500).send('Internal Server Error');
     }
   }
 );

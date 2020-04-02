@@ -9,7 +9,7 @@ const { check, validationResult } = require('express-validator');
 
 //@route GET api/users
 // To get the user data
-
+// access private
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password'); //not displaying the password

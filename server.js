@@ -9,7 +9,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => {
-  res.send('AP is running');
+  res.send('API is running');
 });
 
 app.use('/api/users', require('./routes/api/users'));
