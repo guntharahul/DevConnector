@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Moment from 'moment';
+import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import { addLike, removeLike, deletePost } from '../../actions/post';
 
@@ -23,7 +23,7 @@ const PostItem = ({
     <div>
       <p class='my-1'>{text}</p>
       <p class='post-date'>
-        Posted On <strong>{date}</strong>
+        Posted On <Moment format='YYYY/MM/DD'>{date}</Moment>
       </p>
 
       {showActions && (
