@@ -15,7 +15,7 @@ const Dashboard = ({
 }) => {
   useEffect(() => {
     getCurrentProfile();
-  }, []); //brackets are used to run the function only once
+  }, [getCurrentProfile]); //brackets are used to run the function only once
   return loading && profile === null ? (
     <Spinner></Spinner>
   ) : (
