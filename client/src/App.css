@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #2f7bd3;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -12,6 +12,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.input-round {
+  border-radius: 5rem;
 }
 
 body {
@@ -138,6 +142,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 5rem;
 }
 
 .badge {
@@ -257,6 +262,7 @@ img {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 3rem;
 }
 
 .form input[type='submit'],
@@ -334,7 +340,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.png') no-repeat center center/cover;
+  background: url('./img/showcase2.png') no-repeat center center/cover;
   height: 100vh;
 }
 

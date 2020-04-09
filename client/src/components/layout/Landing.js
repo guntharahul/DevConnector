@@ -14,15 +14,15 @@ const Landing = ({ isAuthenticated }) => {
         <div className='landing-inner'>
           <h1 className='x-large'>Developer's Club</h1>
           <p className='lead'>
-            Developer community to create profile/portfolio, share posts and get
-            help from other developers
+            Community of developers to connect, create your own portfolio, share
+            posts and get help from others.
           </p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
             </Link>
             <Link to='/login' className='btn btn-light'>
-              Login
+              Sign In
             </Link>
           </div>
         </div>
@@ -32,11 +32,11 @@ const Landing = ({ isAuthenticated }) => {
 };
 
 Landing.propTypes = {
-  isAuthenticated: PropTypes.bool
+  isAuthenticated: PropTypes.bool,
 };
 
-const mapStateToProps = state => ({
-  isAuthenticated: state.auth.isAuthenticated
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
 });
 
 export default connect(mapStateToProps)(Landing);

@@ -27,15 +27,15 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Sign In</h1>
-      <p className='lead'>
-        <i className='fas fa-user'></i>Sign Into Your Account
+      <p className='text-primary'>
+        <i className='fas fa-user'></i>
+        {'  '}Sign Into Your Account
       </p>
       <form className='form' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input
             type='email'
-            placeholder='Email Address'
+            placeholder=' Email Address'
             value={email}
             name='email'
             onChange={(e) => onChange(e)}
@@ -45,7 +45,7 @@ const Login = ({ login, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='password'
-            placeholder='Password'
+            placeholder=' Password'
             name='password'
             minLength='6'
             value={password}

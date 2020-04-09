@@ -2,8 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
-import Footer from '../components/layout/Footer';
-import Routes from './components/routing/Routes'
+import Routes from './components/routing/Routes';
 
 import './App.css';
 //Redux
@@ -29,7 +28,6 @@ const App = () => {
             <Route exact path='/' component={Landing}></Route>
             <Route component={Routes}></Route>
           </Switch>
-          <Footer></Footer>
         </Fragment>
       </Router>
     </Provider>

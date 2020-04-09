@@ -52,15 +52,14 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Sign Up</h1>
-      <p className='lead'>
+      <p className='  text-primary'>
         <i className='fas fa-user'></i> Create Your Account
       </p>
-      <form className='form' onSubmit={(e) => onSubmit(e)}>
+      <form className='form ' onSubmit={(e) => onSubmit(e)}>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Name'
+            placeholder=' Name'
             name='name'
             value={name}
             onChange={(e) => onChange(e)}
@@ -69,7 +68,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='email'
-            placeholder='Email Address'
+            placeholder=' Email Address'
             value={email}
             name='email'
             onChange={(e) => onChange(e)}
@@ -82,7 +81,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='password'
-            placeholder='Password'
+            placeholder=' Password'
             name='password'
             value={password}
             onChange={(e) => onChange(e)}
@@ -91,7 +90,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='password'
-            placeholder='Confirm Password'
+            placeholder=' Confirm Password'
             name='password2'
             value={password2}
             onChange={(e) => onChange(e)}
